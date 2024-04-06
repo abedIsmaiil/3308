@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuitUp Online Shopping</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="background-color: #f7f7f0;">
+
+    <section id="Header" class="bg-light">
+
+        <header id="TopHeader">
+            <h1  id="shein" style="font-weight: bold; font-size: 50px; color: rgb(19, 16, 14);">SuitUp</h1>
+            <input type="text" name="nameToSearch" id="search" placeholder="you looking for...?" autocomplete="off">
+            <img src="assets/icons/search.png" class="searchIcon">
+            <div id="Icons">
+            <a href=""><img src="assets/icons/personal.png" class="iconet"></a>
+            <a href=""><img src="assets/icons/purchase.png" class="iconet"></a>
+            <a href=""><img src="assets/icons/favorite.png" class="iconet"></a>
+        </header>
+        <header id="DownHeader">
+                <a href="#all" class="choiceToView" class="text-dark">All</a>
+                <a href="#sale" class="choiceToView" class="text-dark">Sale</a>
+                <a href="#women" class="choiceToView" class="text-dark">Women</a>
+                <a href="#kids" class="choiceToView" class="text-dark">Kids</a>
+                <a href="#men" class="choiceToView" class="text-dark">Men</a>
+                <a href="#shoes" class="choiceToView" class="text-dark">Shoes</a>
+                <a href="#sport" class="choiceToView" class="text-dark">Sport</a>
+                <a href="#bags" class="choiceToView" class="text-dark">Bags</a>
+                <a href="#electronics" class="choiceToView" class="text-dark">Electronics</a>
+        </header>
+    
+    </section>
+<section id="ads">
+
+    <div>
+        <img src="assets/photos/ads_1.jpeg" class="img_ads" width="260px" alt="">
+    </div>
+
+    <!-- slider conatiner -->
+    <div id="carouselInterval" class="carousel slide w-50" data-bs-ride="carousel">
+
+        <!-- images -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000" >
+            <img src="assets/photos/carousel_1.jpeg" class="img_ads d-block w-100" alt="">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/photos/carousel_2.jpeg" class="img_ads d-block w-100" alt="">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="assets/photos/carousel_3.jpg" class="img_ads d-block w-100" alt="">
+          </div>
+        </div>
+
+        <!-- indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="0" class="active" aria-label="slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <!-- left & right Buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div>
+        <img src="assets/photos/ads_2.jpeg" class="img_ads" width="350px" alt="" >
+    </div>
+
+</section>
+
+<section id="imgChoice" >
+
+    <figure id="womenChoice">
+        <a href=""><img src="assets/photos/women.jpeg" class="imag"></a>
+        <figcaption class="imgcap">Women</figcaption>
+    </figure>
+    <figure id="kidsChoice">
+        <a href=""><img src="assets/photos/kids.jpeg" class="imag"></a>
+        <figcaption class="imgcap">Kids</figcaption>
+    </figure>
+    <figure id="menChoice">
+        <a href=""><img src="assets/photos/men.jpeg" class="imag"></a>
+        <figcaption class="imgcap">Men Fashion</figcaption>
+    </figure>
+    <figure>
+        <a href=""><img src="assets/photos/shooes.jpeg" class="imag"></a>
+        <figcaption class="imgcap">Shooes</figcaption>
+    </figure>
+    <figure>
+        <a href=""><img src="assets/photos/Bags.jpeg" class="imag"></a>
+        <figcaption class="imgcap">Bags</figcaption>
+    </figure>
+    <figure>
+        <a href=""><img src="assets/photos/sport.jpeg" class="imag"></a>
+        <figcaption class="imgcap">Sports</figcaption>
+    </figure>
+    <figure>
+        <a href=""><img src="assets/photos/electonics.jpeg" class="imag"></a>
+        <figcaption class="imgcap">Electronics</figcaption>
+    </figure>
+
+</section>
+
+<section id="displayProducts">
+
+    <div class="row" id="">
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%; margin-bottom: 5%; border-radius: 3%;">
+                <img src="assets/photos/men.jpeg"  class="card-img-top"; style=" height: 240px; border-radius: 6%" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+        <div class="col-sm-auto col-xl-2">
+            <div class="card" style="width: 100%;">
+                <img src="assets/photos/men.jpeg" style="height: 240px;" class="card-img-top" alt="">
+                <span class="price">7,34$</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="endSection" class="bg-light">
+
+    <div id="Info">
+        <div class="compInfo">
+            <p style="font-size: 15px;font-weight: bold;">COMPANY INFO</p>
+            <a href="#" class="links">About shein</a><br>
+            <a href="#" class="links">Careers</a>
+        </div>
+        <div class="compInfo">
+            <p style="font-size: 15px;font-weight: bold;">HELP & SUPPORT</p>
+            <a href="#" class="links">How to order</a><br>
+            <a href="#" class="links">How to track</a><br>
+        </div>
+        <div class="compInfo">
+            <p style="font-size: 15px;font-weight: bold;">CUSTOMER CARE</p>
+            <a href="#" class="links">Contact us</a><br>
+        </div>
+    </div>
+
+    <div id="findUs">
+        <div id="links">
+            <div  style="display: flex;flex-direction: column; justify-content: space-around;">
+               <span style="font-size: 15px;margin-left: 20px;font-weight: bold;">
+                    FIND US ON..</span><br>
+                <div style="display: flex; justify-content: space-between;">
+                    <a href="#"><img src="assets/icons/facebook.png" class="icon"></a>
+                    <a href="#"><img src="assets/icons/instagram.png" class="icon"></a>
+                    <a href="#"><img src="assets/icons/twitter.png" class="icon"></a> 
+                    <a href="#"><img src="assets/icons/youtube.png" class="icon"></a> 
+                    <a href="#"><img src="assets/icons/tik-tok.png" class="icon"></a>   
+                </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div style="margin-left: 15px">
+                <span style="font-size: 13px;font-weight: bold;">DOWNLOAD SHEIN APP TO SAVE MORE!</span><br>
+                <a href="#">
+                    <img src="assets/icons/apple.png" class="icon"></a>
+                <a href="#">
+                    <img src="assets/icons/android.png" class="icon"></a>
+            </div>
+        </div>
+        
+    
+
+</section>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
